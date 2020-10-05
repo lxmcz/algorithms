@@ -16,7 +16,7 @@ const sortedRandomDataAsc = [...randomData].sort((a, b) => {
 
 
 test(`普通版本-升序排列 ${randomData}`, () => {
-  expect(sort.selectionSort(randomData)).toStrictEqual(sortedRandomDataAsc);
+  expect(sort.selectionSort([...randomData])).toStrictEqual(sortedRandomDataAsc);
 });
 
 
